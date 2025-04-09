@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './App.css'
+import completedImg from './completed.svg'
 type Task = {
 	text: string
 	completed: boolean
@@ -62,7 +63,7 @@ const App: React.FC = () => {
 										type='checkbox'
 										checked={item.completed}
 									/>
-									<span className='checkmark'>{item.completed && <img width={20} height={20} src='../public/completed.svg'/>}</span>
+									<span className='checkmark'>{item.completed && <img width={20} height={20} src={completedImg}/>}</span>
                   <span className={item.completed ? 'completed-task' : ''}>
 									{item.text}
 								</span>
