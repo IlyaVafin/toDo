@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(190, 188, 188);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+   border: 1px solid rgb(181, 181, 181);
+   border-left: none;
+   border-right: none;
+   padding: 10px;
+   font-size: 18px;
+}
+
+input[type="text"] {
+ width: 100%;
+ height: 50px;
+ border: none;
+ outline: none;
+ padding-left: 10px;
+ font-size: 20px;
+ font-weight: 400;
+}
+
+h1 {
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+}
+
+ button {
+  background: none;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 8px;
+  cursor: pointer;
+}
+
+.todo {
+  background: #fff;
+  width: 600px;
+  border-radius: 4px;
+}
+
+.todo__tasks {
+  box-shadow:  1px 1px 10px rgb(174, 174, 174)
+}
+
+.completed-task {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.todo__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Кастомный чекбокс */
+
+.custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  user-select: none;
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+.checkmark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  color: white;
+  background: none;
+  border: 1px solid rgb(158, 155, 155);
+  border-radius: 50%;
+  padding: 5px;
+  transition: background-color 0.2s ease;
+}
